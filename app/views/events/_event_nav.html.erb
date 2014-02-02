@@ -1,0 +1,28 @@
+<nav class="navbar event-nav" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <%= link_to root_path do%>
+     <i class="fa fa-home fa-3x" style="padding: 5px;"></i>
+    <% end %>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav navbar-right">
+      <li>
+        <%= link_to "全部", events_path %>
+      </li>
+      <% Event::CATEGORY.keys.each do |key|%>
+        <li>
+          <%= link_to Event::CATEGORY[key], events_path(:category=>key)%>
+        </li>
+      <% end %>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</nav>

@@ -1,0 +1,14 @@
+<%= render 'back_to_home'%>
+<div class="container">
+  <% @blog.each do |b|%>
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3 blog-preview">
+        <%= link_to blog_path(b) do %>
+          <h2><%= b.title %></h2>
+          <h4><%= b.content.truncate(100) %></h4>
+          <h5><%= b.author %></h5>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</div>
