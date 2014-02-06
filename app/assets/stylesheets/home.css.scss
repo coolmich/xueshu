@@ -7,6 +7,7 @@ h1,h2,h3,h4,h5,p{
   font-family: Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
 }
 .full-image-container{
+  min-height: 650px;
   height: 100%;
 }
 .full-img{
@@ -98,7 +99,7 @@ h1,h2,h3,h4,h5,p{
     margin-bottom: 60px;
   }
   .view-more{
-    margin-top: 10%;
+    margin-top: 5%;
     h2{
       margin: 30px 0;
     }
