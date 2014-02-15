@@ -1,4 +1,4 @@
-<div class="image-container">
+<div class="image-container" id="university">
   <div style="background-image: url(<%= asset_path "ucsd_campus.jpg" %>)" class="full-img">
     <div class="container introductive-title">
       <br>
@@ -6,7 +6,7 @@
       <header>San Diego</header><br><br>
       <br>
       <div class="row">
-        <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="sub-topic-3">
             <%= link_to blogs_path(:category=>0) do %>
               <h2>学院</h2>
@@ -14,7 +14,7 @@
             <% end %>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="sub-topic-3">
               <%= link_to blogs_path(:category=>1) do %>
                 <h2>专业</h2>
@@ -22,7 +22,7 @@
               <% end %>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="sub-topic-3">
             <%= link_to blogs_path(:category=>2) do %>
               <h2>交通</h2>
@@ -30,7 +30,7 @@
             <% end %>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="sub-topic-3">
             <%= link_to blogs_path(:category=>3) do %>
               <h2>Q&A</h2>
