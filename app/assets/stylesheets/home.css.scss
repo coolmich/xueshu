@@ -6,6 +6,14 @@ header{
 h1,h2,h3,h4,h5,p{
   font-family: Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
 }
+@media (max-width: 500px){
+  h1{
+    font-size: 28px;
+  }
+  h2{
+    font-size: 22px;
+  }
+}
 .full-image-container{
   min-height: 650px;
   height: 100%;
@@ -94,6 +102,22 @@ h1,h2,h3,h4,h5,p{
     .icon-facebook{
       padding: 5px 13px;
     }
+    .wechat{
+      position: relative;
+      left: 15px;
+      bottom: 5px;
+      .wechat-icon{
+        width: 40px;
+        height: 40px;
+        padding: 2px;
+        border-radius: 20px;
+        border: thin solid 
+      }
+    }
+    .wechat-qr{
+      height: 200px;
+      width: 200px;
+    }
   }
   .sub-topic-3{
     margin: 20px auto;
@@ -115,6 +139,14 @@ h1,h2,h3,h4,h5,p{
     }
     div{
       margin-bottom: 30px;
+    }
+  }
+  @media (max-width: 500px){
+    h1{
+      font-size: 28px;
+    }
+    h2{
+      font-size: 22px;
     }
   }
 }

@@ -19,6 +19,24 @@
         <%= link_to "http://page.renren.com/601269960", :target=>'_blank' do %>
           <span>人</span>
         <% end %>
+
+        <a href="#wechat" data-target="#wechat" data-toggle="modal" class="wechat"><%= image_tag "wechat.png", :class=>"wechat-icon" %></a>
+
+        <div class="modal fade" id="wechat" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3 class="modal-title" id="myModalLabel" style="color: #444;">微信平台</h3>
+              </div>
+              <div class="modal-body">
+                <h4 style="color: #444;">校园Events, CSSA活动</h4> 
+                <h4 style="color: #444;">每周更新, 请关注微信公众平台留学在UCSD</h4>
+                <%= image_tag "qrcode.png", :class=>'wechat-qr'%>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
